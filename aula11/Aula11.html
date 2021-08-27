@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello World!</title>
+
+    
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/Aula11.js" defer></script>
+  </head>
+  <body>
+      
+    
+    <!--If-->
+    
+    <div id="if">
+      <input type="password" id="senha">
+      
+      <button onclick="
+                       var pass= document.getElementById('senha').value
+                         if(pass =='1234'){
+                           alert('Entrou')
+                         }
+                       else{
+                         alert('Tente novamente')
+                       }
+                       ">
+        Entrar
+      </button>
+    </div><br><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--Switch-->
+    <div id="switch">
+      <select id="opcoes">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+      </select>
+      
+      <button onclick="
+                       var op= document.getElementById('opcoes').value
+                       
+                       switch(op){
+                       case '1':
+                         alert(1);
+                         break;  
+                       
+                       case '2':
+                         alert(2);
+                         break;
+                       
+                       case '3':
+                         alert(3);
+                         break;
+                       
+                       }
+                       ">
+        Selecionar</button>
+    </div><br><br>
+    
+    
+    
+    
+    
+    
+    
+    <!--For-->
+    
+    <div id="for">
+      <input id="qtd">
+      <button onclick="
+                       var qtdInput= document.getElementById('qtd').value
+                       
+                       var html = '';
+                       
+                       for(var i = 0; i<qtdInput; i++){
+                         html += 'Nome: <input><br>';
+                       }
+                       document.getElementById('nomes').innerHTML = html;
+                       
+                       "> Criar
+        
+      </button>
+    </div><br><br>
+  <div id="nomes">
+    
+    </div><br><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--While-->
+    
+    <div id="while">
+      
+      <button onclick="
+                       var num = Math.floor(Math.random()*10);
+                       html = '';
+                       while(num != 2){
+                         
+                          html += num;
+                          num =  Math.floor(Math.random()*10);
+                       }
+                       document.getElementById('numeros').innerHTML = html;
+                       
+                       ">
+        Gerar
+      </button>
+      
+      <div id="numeros">
+        
+      </div>
+    </div>
+    
+  </body>
+</html>

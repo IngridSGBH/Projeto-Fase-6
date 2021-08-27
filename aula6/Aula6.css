@@ -1,0 +1,119 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    /*margin: 2em; /*apagar*/
+  }
+  /*navbar vertical*/
+  
+  ul.vertical {
+    list-style-type: none; /*tira aquela bolinha chamada marcação*/
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #dddddd;
+  }
+  ul.vertical li a {
+    display: block;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  ul.vertical li a:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /*navbar horizontal*/
+  ul.horizontal {
+    list-style-type: none; /*tira aquela bolinha chamada marcação*/
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    overflow: hidden;
+    width:100%;
+    /*position: static;
+    /*top: 0; /*Static positioned elements are not affected by the top, bottom, left, and right properties.*/
+     /* An element with position:static it is always positioned according to the normal flow of the page*/
+    /*Relatively-positioned element will cause it to be adjusted away from its normal position. 
+    Other content will not be adjusted to fit into any gap left by the element.*/
+  }
+  
+  ul.horizontal li {
+    float: left;
+  }
+  
+  ul.horizontal li a {
+    display: block;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  ul.horizontal li a:hover {
+    background-color: #111111;
+  }
+  
+  /*Menu Suspenso*/
+  
+  ul.menu {
+    list-style-type: none; /*tira aquela bolinha chamada marcação*/
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #333333;
+    width: 100%;
+  }
+  
+  ul.submenu {
+    list-style-type: none; /*tira aquela bolinha chamada marcação*/
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #eeeeee;
+    display: none;
+  }
+  
+  .menu li {
+    float: left;
+    width: auto;
+    position: relative;
+    text-decoration: none;
+    
+  }
+  
+  .menu li:hover > ul.submenu{
+    display: block;
+  }
+  
+  .menu li a:hover {
+    background-color: #111111;
+  }
+  
+  .submenu li a {
+    display: block;
+    color: #000000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: #cccccc;
+  }
+  
+  /*a:link {
+    color: #0000ff;
+  }
+  
+  a:visited {
+    color: #ff0000;
+  }
+  
+  a:hover {
+    color: #00ff00;
+  }
+  
+  a:active {
+    color: #ff6600;*/
+  }

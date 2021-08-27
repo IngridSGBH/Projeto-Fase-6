@@ -1,0 +1,77 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  * {
+    box-sizing: border-box;  /*divs se comportarão como caixas, somando borda, preenchimento do elemento sendo aplicado para todos*/
+  }
+  .topnav {
+    background-color: #333333; /*cinza escuro*/
+    overflow: hidden;       /* se o eles não couberem juntas, usamos o overflow: hidden fica escondido, visible fica visivel*/
+  }
+  .topnav a {
+    color: #f2f2f2;
+    text-decoration: none;           /*faz tirar o sublinhado dos links, todas as tags "a" dentro da barra de navegação*/
+    padding: 14px 16px; /*preenchimento, direçoes que ele aplicará o preenchimento: -top, -left, -right, -boot, colocar 2 valores definem top-boot e left-right*/
+    display: block; /*block: disposição das divs em blocos, um embaixo do outro; inline: ignora preenchimento e disposição das divs em uma linha somente*/
+    float: left;
+    text-align: center;
+  }
+  .banner{
+    background-color: #888888;       /*cinza mais claro*/
+    padding: 15px; /*aumenta para todos os lados o mesmo valor*/
+    margin-top: 7px; /*margem para cima */
+    text-align: center;
+    color: #ffffff;  
+  }
+  .container{
+    background-color: #ffffff;       /*laranja #ff6600*/
+    overflow: auto;                /*auto colocar uma barra de rolagem no caso não couber na mesma linha*/
+  }
+  .menu {
+    background-color: #ffffff; /*verde #00ff00*/
+    width:20%;
+    float: left;
+    text-align: center;
+  }
+  .menu a {
+    background-color: #ddd;
+    text-decoration: none;           /*faz tirar o sublinhado dos links, todas as tags "a" dentro do menu */
+    width:100%;
+    padding: 8px;
+    display: block;
+    margin-top: 7px;
+    color: #000000;
+  }
+  .main {
+    background-color: #ffffff; /*background-color: #0000ff; azul*/
+    width:60%;
+    padding: 0px 20px;
+    float: left;
+  }
+  .right {
+    background-color: #dddddd; /*cinza mais claro*/
+    width:20%;
+    padding: 15px;
+    margin-top: 7px; 
+    float: left;
+    text-align: center;
+    
+  }
+  .footer {
+    background-color: #dddddd; /*cinza mais claro*/
+    padding: 10px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 620px)
+  {
+    .menu, .main, .right{
+      width:100%;
+    }
+  }
+  
+  
+  

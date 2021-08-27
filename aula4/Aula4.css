@@ -1,0 +1,159 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+  }
+  /*SELETORES*/
+  /*p{
+    color:red;                  /* elemento	p	Seleciona todos <p>*/
+  /*}
+  
+  #id{                     /*#id	#firstname	Seleciona o elemento com id="firstname"*/
+    /*color: orange;
+  }
+  
+  .class{                   /*.class	.class	Seleciona todos os elementos com class="name"*/
+    /*color:green;
+  }
+  
+  .name{
+    color: pink;
+  }*/
+  
+  body {
+    background-image: linear-gradient(to bottom, #FF9AEF, #FEDAC1, #D5E1CF, #B7E6D9);
+    background-color: #B7E6D9;
+    background-repeat: no-repeat;
+  }
+  
+  h1.common{
+    color: rgba(255,255,0,1);
+      border:10px solid #ff409f;
+    background-color: pink;
+  }
+  h1.gif{
+     background-image: url(https://cdn.glitch.com/c4ccfdfe-d327-49c2-b3a8-bb9caa937a76%2Frainbow.gif?v=1619115609179); 
+    -webkit-background-clip: text; /* Esse text-fill-color pode ser muito bem substituido por color */
+    -webkit-text-fill-color: transparent; /* fundo transparente */
+  }
+  
+  /*body{
+      /*background-color: #4682b4;*/
+      /*background-image: url("https://cdn.glitch.com/c4ccfdfe-d327-49c2-b3a8-bb9caa937a76%2FGettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg?v=1619107018559");
+      /*background-image: url("https://cdn.glitch.com/c4ccfdfe-d327-49c2-b3a8-bb9caa937a76%2Foferta-geek1-300x158.jpg?v=1618512231067");
+      background-repeat: repeat; /*no-repeat = não repete nenhuma vez, repeat-y = vai repetir somente em y, repeat-x = vai repetir somente em x, repeat= repete várioas vezes*/
+  /*}
+  
+  /*TIPOS DE BORDA*/
+  
+  p.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+  
+  /*LARGURA DA BORDA*/
+  
+  p.um {
+    border-style: solid; 
+    border-width: 8px; 
+  }
+  p.dois {
+    border-style: solid;
+    border-width: medium; /*podendo ter três valores: medium, thick or thin*/
+  }
+  p.tres {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  /*ARREDONDAMENTO DA BORDA*/
+  
+  p.redondo1{
+    border: 2px solid tomato;
+    border-radius: 5px;
+  }
+  p.redondo2{
+    border: 2px solid pink;
+    border-radius: 8px;
+  }
+  p.redondo3{
+    border: 2px solid cyan;
+    border-radius: 12px;
+  }
+  
+  /*ALINHAMENTO DO TEXTO*/
+  h2{
+    text-align: center;
+  }
+  
+  h3{
+    text-align: left;
+  }
+  
+  h4{
+    text-align: right;
+  }
+  
+  p.text{
+    text-align: justify;
+  }
+  
+  /*DECORAÇÃO DO TEXTO*/
+  
+  h1.tachado{
+    text-decoration: line-through;
+  }
+  h2.linhaacima{
+    text-decoration: overline;
+  }
+  h3.linhaabaixo{
+    text-decoration: underline;
+  }
+  
+  h4.linhasemconfig{
+    text-decoration: none;
+  }
+  
+  /*CAPITALIZAÇÃO*/
+  
+  p.uppercase{
+    text-transform: uppercase;
+  }
+  p.lowercase{
+    text-transform: lowercase;
+  }
+  p.capitalize{
+    text-transform: capitalize;
+  }
+  
+  /*SOMBREAMENTO*/
+  
+  h2.sombra {
+    color: orange;
+    text-shadow: 3px 15px black;  
+  }
+  
+  /*FONTES*/
+  
+  p.fonte{
+    font-family: "Arial", "Verdana", "Times New Roman"; /* caso a pessoa não tenha a arial, poderá visualizar verdana*/
+  }
+  b.a1{
+    font-size: 50px;
+    font-family: "Times New Roman", serif; /* caso a pessoa não tenha a arial, poderá visualizar qualquer outra fonte da família serif*/
+  }
+  b.a2{
+    font-size: 50px;
+    font-family: "Monotype Corsiva", Serif; /* caso a pessoa não tenha a arial, poderá visualizar qualquer outra fonte da família sans-serif*/
+  }
+  p.px{
+    font-size: 40px;
+  }
+  

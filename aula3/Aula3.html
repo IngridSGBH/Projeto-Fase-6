@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprendendo a colocar formulários</title>
+  </head>
+  <body>
+    <h2>Cadastro</h2>
+    Responde a minha pesquisa? É rapidinho, não demora nem 2 minutos!
+    <p></p>
+    <form action="" method="GET">
+      Nome: <input type="text" name="nome"><br>
+      Senha: <input type="password" name="senha"><br>
+      <hr>
+      Qual é seu jogo favorito? <br> <!--type radio lembra as múltiplas escolhas onde devemos assinalar somente uma opção-->
+      <input type="radio" name="jogo" value="Fortnite"> Fortnite <br>
+      <input type="radio" name="jogo" value="Roblox"> Roblox <br>
+      <input type="radio" name="jogo" value="League of Legends"> League of Legends <br>
+      <input type="radio" name="jogo" value="Free Fire"> Free Fire <br>
+      <input type="radio" name="jogo" value="Minecraft"> Minecraft <br>
+      <input type="radio" name="jogodiferente" value="CSGO"> CS:GO
+      <!-- se o name for diferente dos outros nomes, poderei marcar mais de uma opção-->
+      <hr>
+      Qual é a sua comida preferida? <br> <!--type checkbox serve para cescolher várias opções-->
+      <input type="checkbox" name="comida1" value="Lasanha"> Lasanha <br>
+      <!-- se o name DEVE ser diferente dos outros nomes, assim poderei marcar mais de uma opção-->
+      <input type="checkbox" name="comida2" value="Pizza"> Pizza <br>
+      <input type="checkbox" name="comida3" value="Batata frita"> Batata Frita <br>
+      <input type="checkbox" name="comida4" value="Cachorro Quente"> Cachorro Quente <br>
+      <input type="checkbox" name="comida5" value="Hamburguer"> Hambúguer
+      <hr>
+      Selecione seu personagem favorito: <br><!-- Elemento select-->
+      <select name="personagens">
+        <option value="Satoru">Satoru</option>
+        <option value="Kakashi">Kakashi</option>
+        <option value="Goku">Goku</option>
+        <option value="Bob Esponja">Bob Esponja</option>
+        <option value="Capitao America">Capitão América</option>
+      </select>
+      <hr>
+      Escolha sua cor favorita:<br> <!--type color serve para colocar uma caixa com preferência de cor do usuário-->
+      <input type="color" name="cor"><br>
+      <hr>
+      Data Atual<br> <!--type date serve para colocar caixa data-->
+      <input type="date" name="data"><br>
+      <hr>
+      Data e Hora<br> <!--type datetime-local serve para colocar numa mesma caixa data e hora-->
+      <input type="datetime-local" name="data"><br>
+      <hr>
+      E-mail<br> <!--type email serve para diferenciar os e-mails de nomes ou outros textos-->
+      <input type="email" name="email"><br> 
+      <hr>
+      Arquivo<br> <!--type email serve para diferenciar os e-mails de nomes ou outros textos-->
+      <input type="file" name="arquivo"><br>
+      <hr>
+      Escolha um número<br>
+      <!--type number serve para inserir números-->
+      <input type="number" name="quantidade"><br>
+      <hr>  
+      Em uma escala de 0 a 10, qual nota você daria para essa pesquisa?<br>
+      <!--type range serve para definir um intervalo-->
+      <input type="range" name="nota" min="0" e max="10"><br>
+      <hr>
+      Deixe registrado aqui elogios, sugestões, reclamações<br>
+      <textarea name="mensagem"rows="10" cols="30">Digite aqui a sua mensagem </textarea> <!--rows são linhas e cols são colunas-->
+      
+      <input type="submit" value="Enviar"> <!--Cria um botão que pode enviar os dados-->
+      <!--Cria um botão que deleta os dados-->
+      <input type="reset" value="Redefinir">
+      <hr>
+
+    </form>
+  </body>
+</html>
